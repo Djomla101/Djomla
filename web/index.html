@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IBK Live Train Tracker MVP</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="layout">
+    <header class="topbar">
+      <div>
+        <h1>IBK Live Tracker</h1>
+        <p class="sub">Modernes MVP – basierend auf deiner VBA-Logik</p>
+      </div>
+      <div class="status-box">
+        <span id="runtimeStatus">RUNNING</span>
+        <span id="clock">--:--:--</span>
+      </div>
+    </header>
+
+    <section class="controls">
+      <label>
+        Suchbegriff
+        <input id="search" type="text" placeholder="Zugnummer, Ziel, Route..." />
+      </label>
+      <button id="toggleSound">🔔 Sound: AN</button>
+      <button id="addDemoTrain">+ Demo-Zug in 2 Min</button>
+    </section>
+
+    <section class="board">
+      <table>
+        <thead>
+          <tr>
+            <th>Route</th>
+            <th>ZugNr</th>
+            <th>Start</th>
+            <th>Ankunft Innsbruck</th>
+            <th>Abfahrt</th>
+            <th>Status</th>
+            <th>Countdown</th>
+            <th>Verspätung</th>
+            <th>Hinweis</th>
+          </tr>
+        </thead>
+        <tbody id="trainRows"></tbody>
+      </table>
+    </section>
+
+    <aside class="alerts">
+      <h2>Alarm Center</h2>
+      <ul id="alertList"></ul>
+    </aside>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
