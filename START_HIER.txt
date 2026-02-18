@@ -1,0 +1,13 @@
+DJOMLA START
+
+ONLINE URL (sofort):
+1) cd /workspace/Djomla
+2) python3 start_online.py
+3) URL aus Terminal öffnen/teilen (https://....trycloudflare.com)
+
+LOKAL:
+1) cd /workspace/Djomla
+2) python3 start_local.py
+3) Browser: http://localhost:4173
+
+Stoppen: Ctrl + C
